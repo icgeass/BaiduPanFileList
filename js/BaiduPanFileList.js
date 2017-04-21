@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       BaiduPanFileList
 // @namespace  https://greasyfork.org/scripts/5128-baidupanfilelist/code/BaiduPanFileList.user.js
-// @version    1.049
+// @version    1.1.0
 // @description  统计百度盘文件(夹)数量大小. Thanks BaiduPanMD5Button
 // @match	http://pan.baidu.com/disk/home*
 // @include	http://pan.baidu.com/disk/home*
@@ -24,23 +24,7 @@ var _BaiduPanFileList_Pattern = "%Path%%Tab%%FileSize%(%FileSizeInBytes% Bytes)"
 var url = document.URL;
 var BTN_WAITING_TEXT = "統計檔案";
 var BTN_RUNNING_TEXT = "處理中...";
-// var CLASS_NAME_APPEND_TO = "";
 var BASE_URL_API = "http://pan.baidu.com/api/list?channel=chunlei&clienttype=0&web=1&dir=";
-var REQ_HEADERS = {
-    "Host" : document.domain,
-    "Connection": "keep-alive",
-    "Cache-Control" : "no-cache",
-    "Pragma" : "no-cache",
-    "Accept" : "application/json, text/javascript, */*; q=0.01",
-    "X-Requested-With" : "XMLHttpRequest",
-    "User-Agent" : navigator.userAgent,
-    "Referer" : "http://pan.baidu.com/disk/home",
-    "Accept-Encoding" : "gzip,deflate,sdch",
-    "Accept-Language" : "zh,en;q=0.8,ja;q=0.6,ko;q=0.4,zh-CN;q=0.2",
-    "Cookie" : document.cookie
-}; // 备用
-
-var global = (function() { return this || (1,eval)('(this)'); }()); //
 
 // 按钮
 var btn_curr = document.createElement("button");
@@ -77,10 +61,7 @@ document.addEventListener("keydown", function(e){
 
 // 自己的网盘添加按钮
 if (url.indexOf("http://pan.baidu.com/disk/home") != -1) {
-    // var el_append_to =
-	// document.getElementsByClassName(CLASS_NAME_APPEND_TO)[0];
     if(!document.getElementById(BTN_WAITING_TEXT)){
-        // el_append_to.appendChild(btn_curr);
         $("[style='position: absolute; top: 0px; padding-top: 11px; line-height: normal;']").append(btn_curr);
     }
 }

@@ -14,4 +14,4 @@ https://greasyfork.org/help/installing-user-scripts
 2. 请注意保存剪切板原内容
 
 ### 示例
-[点击查看](https://raw.githubusercontent.com/icgeass/BaiduPanFileList/master/resource/demo.txt)
+[点击查看](https://raw.githubusercontent.com/icgeass/BaiduPanFileList/master/resources/demo.txt)
