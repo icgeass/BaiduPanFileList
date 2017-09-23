@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name       BaiduPanFileList
 // @namespace  https://greasyfork.org/scripts/5128-baidupanfilelist/code/BaiduPanFileList.user.js
-// @version    1.1.0
+// @version    1.2.0
 // @description  统计百度盘文件(夹)数量大小. Thanks BaiduPanMD5Button
-// @match	http://pan.baidu.com/disk/home*
-// @include	http://pan.baidu.com/disk/home*
+// @match	https://pan.baidu.com/disk/home*
+// @include	https://pan.baidu.com/disk/home*
 // @require http://libs.baidu.com/jquery/2.1.1/jquery.min.js
 // @grant GM_xmlhttpRequest
 // @grant GM_setClipboard
