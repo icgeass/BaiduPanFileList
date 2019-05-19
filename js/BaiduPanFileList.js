@@ -173,7 +173,7 @@ function showInfo(button, includeSubDir) {
                     + "files: " + num_all_files + ", folders: " + num_all_folder + CTL
                     + "xxx (JPG).zip: " + num_jpg + CTL
                     + "xxx.zip: " + num_original + CTL 
-                    + "size: " + getReadableFileSizeString(size_all) + "  ("+ size_all + " Bytes)" + CTL;
+                    + "size: " + getReadableFileSizeString(size_all) + "  ("+ size_all.toLocaleString() + " Bytes)" + CTL;
                     GM_setClipboard(str_alert + CTL + CTL + name_all.sort().join("\r\n") + "\r\n");
                     alert(str_alert.replace(/\r\n/g, "\n"));
                     showBtn(true);
