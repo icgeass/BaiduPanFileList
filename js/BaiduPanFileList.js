@@ -24,7 +24,7 @@ var _BaiduPanFileList_Pattern = "%Path%%Tab%%FileSize%(%FileSizeInBytes% Bytes)"
 var url = document.URL;
 var BTN_WAITING_TEXT = "統計檔案";
 var BTN_RUNNING_TEXT = "處理中...";
-var BASE_URL_API = "http://pan.baidu.com/api/list?channel=chunlei&clienttype=0&web=1&dir=";
+var BASE_URL_API = "https://pan.baidu.com/api/list?channel=chunlei&clienttype=0&web=1&dir=";
 
 // 按钮
 var btn_curr = document.createElement("button");
