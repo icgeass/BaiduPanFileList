@@ -5,6 +5,8 @@
 // @description  统计百度盘文件(夹)数量大小. Thanks BaiduPanMD5Button
 // @match	https://pan.baidu.com/disk/home*
 // @include	https://pan.baidu.com/disk/home*
+// @match	https://pan.baidu.com/disk/main*
+// @include	https://pan.baidu.com/disk/main*
 // @require http://libs.baidu.com/jquery/2.1.1/jquery.min.js
 // @grant GM_xmlhttpRequest
 // @grant GM_setClipboard
